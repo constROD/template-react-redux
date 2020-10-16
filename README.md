@@ -1,4 +1,4 @@
-# Custom Template React Redux
+# Custom Template React Redux JavaScript
 
 ## Installation:
 
