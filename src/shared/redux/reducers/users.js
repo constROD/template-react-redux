@@ -1,5 +1,5 @@
-import { DEFAULT_USERS } from "shared/constants/redux";
-import { SET_CURRENT_USER } from "../types/users";
+import { DEFAULT_USERS } from "shared/constants/redux/defaults";
+import { SET_CURRENT_USER } from "shared/constants/redux/types";
 
 const usersReducer = (state = DEFAULT_USERS, action) => {
   switch (action.type) {

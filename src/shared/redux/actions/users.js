@@ -1,4 +1,4 @@
-import { SET_CURRENT_USER } from "../types/users";
+import { SET_CURRENT_USER } from "shared/constants/redux/types";
 
 export const setCurrentUser = (payload) => {
   return {
