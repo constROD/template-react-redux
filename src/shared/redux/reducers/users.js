@@ -1,7 +1,7 @@
 import { DEFAULT_USERS } from "shared/constants/redux/defaults";
 import { SET_CURRENT_USER } from "shared/constants/redux/types";
 
-const usersReducer = (state = DEFAULT_USERS, action) => {
+export const usersReducer = (state = DEFAULT_USERS, action) => {
   switch (action.type) {
     case SET_CURRENT_USER:
       return {
@@ -14,5 +14,3 @@ const usersReducer = (state = DEFAULT_USERS, action) => {
       return state;
   }
 };
-
-export default usersReducer;
