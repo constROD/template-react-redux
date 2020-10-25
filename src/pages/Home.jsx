@@ -1,5 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { Button } from "shared/elements/button/Button";
 import { setCurrentUser } from "shared/redux/actions/users";
 import { styled } from "shared/theme";
 
@@ -15,16 +16,17 @@ const Home = () => {
       <h2>
         Click the button to display my name here: {currentUser?.name ?? ""}
       </h2>
-      <button onClick={() => dispatch(setCurrentUser({ name: "bossROD" }))}>
-        {" "}
-        Display 'bossROD'
-      </button>
+      <Button onClick={() => dispatch(setCurrentUser({ name: "bossROD" }))}>
+        Display Current User
+      </Button>
       <h1>
         Hello Home! <span>test</span>
       </h1>
     </HomeWrapper>
   );
 };
+
+export default Home;
 
 const HomeWrapper = styled.div`
   h1 {
@@ -34,5 +36,3 @@ const HomeWrapper = styled.div`
     }
   }
 `;
-
-export default Home;
