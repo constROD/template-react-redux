@@ -1,13 +1,13 @@
 import defaultStyled, {
   createGlobalStyle,
-  ThemeProvider as SThemeProvider
+  ThemeProvider as SThemeProvider,
 } from "styled-components";
 
 const colors = {
+  default: "blue",
   primary: "red",
-  primaryLight: "#959595",
   secondary: "yellow",
-  secondaryLight: "#D34E4E",
+  bgDefault: "black",
   bgPrimary: "#2A2A2A",
   bgSecondary: "#3C3C3C",
 };
@@ -27,7 +27,7 @@ export const theme = () => {
 };
 
 export const ThemeProvider = SThemeProvider;
-export const styled = defaultStyled
+export const styled = defaultStyled;
 export const GlobalStyle = createGlobalStyle`
   html, body {
     padding: 0;
